@@ -1,0 +1,38 @@
+{
+  "projectName": "Firesteer",
+  "projectOwner": "sambegin",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "sambegin",
+      "name": "sambegin",
+      "avatar_url": "https://avatars3.githubusercontent.com/u/6645382?v=4",
+      "profile": "https://github.com/sambegin",
+      "contributions": [
+        "question",
+        "code",
+        "doc",
+        "ideas",
+        "infra",
+        "platform",
+        "review",
+        "test"
+      ]
+    },
+    {
+      "login": "wilau2",
+      "name": "William Lauzé",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/5473183?v=4",
+      "profile": "https://github.com/wilau2",
+      "contributions": [
+        "doc"
+      ]
+    }
+  ]
+}

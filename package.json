@@ -9,6 +9,8 @@
     "build-main": "cross-env NODE_ENV=production node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.main.prod.js --colors",
     "build-renderer": "cross-env NODE_ENV=production node --trace-warnings -r babel-register ./node_modules/webpack/bin/webpack --config webpack.config.renderer.prod.js --colors",
     "dev": "cross-env START_HOT=1 node -r babel-register ./internals/scripts/CheckPortInUse.js && cross-env START_HOT=1 npm run start-renderer-dev",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate",
     "electron-rebuild": "electron-rebuild --parallel --force --types prod,dev,optional --module-dir app",
     "lint": "cross-env NODE_ENV=development eslint --cache --format=node_modules/eslint-formatter-pretty .",
     "lint-fix": "npm run lint -- --fix",
@@ -103,6 +105,7 @@
     ]
   },
   "devDependencies": {
+    "all-contributors-cli": "4.11.1",
     "babel-core": "^6.26.0",
     "babel-eslint": "^8.2.1",
     "babel-jest": "^22.1.0",
@@ -161,22 +164,22 @@
     "webpack-merge": "^4.1.1"
   },
   "dependencies": {
+    "@material-ui/icons": "^1.0.0-beta.43",
     "devtron": "^1.4.0",
     "electron-debug": "^1.5.0",
     "history": "^4.7.2",
-    "material-ui": "^1.0.0-beta.47",
-    "@material-ui/icons": "^1.0.0-beta.43",
     "lodash": "^4.17.10",
+    "material-ui": "^1.0.0-beta.47",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "^4.0.0-beta.13",
     "react-json-view": "^1.16.6",
     "react-redux": "^5.0.6",
-    "redux-persist": "^5.7.0",
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-router-redux": "^5.0.0-alpha.6",
     "redux": "^3.7.2",
+    "redux-persist": "^5.7.0",
     "shortid": "^2.2.8",
     "source-map-support": "^0.5.3"
   },
