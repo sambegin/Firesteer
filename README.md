@@ -5,7 +5,7 @@
 
 ## Install
 
-And then install dependencies with yarn. (May take a while for first fresh install). Unfortunately since we use electron-rebuild package,
+Install dependencies with yarn. (May take a while for first fresh install). Unfortunately since we use electron-rebuild package,
 [yarn seems to be the only way](https://github.com/electron-userland/electron-builder#installation) to install dependencies correctly
 
 ```bash
@@ -14,7 +14,7 @@ $ yarn
 
 ## Run
 
-Start the app in the `dev` environment. This starts the renderer process in [**hot-module-replacement**](https://webpack.js.org/guides/hmr-react/) mode and starts a webpack dev server that sends hot updates to the renderer process:
+Start the app in the `dev` environment. This starts the renderer process in hot-module-replacement mode and starts a webpack dev server that sends hot updates to the renderer process:
 
 ```bash
 $ yarn run dev
@@ -65,7 +65,7 @@ DEBUG_PROD=true npm run package
 ## How to add modules to the project
 
 You will need to add other modules to this boilerplate, depending on the requirements of your project. For example, you may want to add [node-postgres](https://github.com/brianc/node-postgres) to communicate with PostgreSQL database, or 
-[material-ui](http://www.material-ui.com/) to reuse react UI components.
+[material-ui](https://material-ui-next.com/) to reuse react UI components.
 
 ⚠️ Please read the following section before installing any dependencies ⚠️
 
