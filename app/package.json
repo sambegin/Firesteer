@@ -1,0 +1,20 @@
+{
+  "name": "firesteer",
+  "productName": "Firesteer",
+  "version": "1.0.0",
+  "description": "A brilliant desktop application that gives you full control over your Firestore database",
+  "main": "./main.prod.js",
+  "author": {
+    "name": "Samuel Bégin",
+    "email": "beginsam2@gmail.com",
+    "url": "https://github.com/sambegin"
+  },
+  "scripts": {
+    "electron-rebuild": "node -r babel-register ../internals/scripts/ElectronRebuild.js",
+    "postinstall": "npm run electron-rebuild"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "firebase-admin": "^5.12.0"
+  }
+}
