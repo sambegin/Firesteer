@@ -1,101 +1,37 @@
-# Firesteer
+<h1 align="center">
+  🔥⚓️ firesteer 🔥⚓️
+</h1>
+<p align="center" style="font-size: 1.2rem;">A brilliant desktop application that gives you full control over your firestore database</p>
 
-### A brilliant desktop application that gives you full control over your [Firestore](https://firebase.google.com/docs/firestore/) database
+<hr />
 
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
-## Install
+## The problem
+Google offers what they call the [Firebase Console](https://console.firebase.google.com) to see what's in your database. It provides a simple (too simple) way to visualize each saved collections and documents.
+However, the moment you'll gather more and more data, you'll have to play the game: "Let's click on my collection, then scroll... then click... then scroll... 
+then "CMD (CTRL) + F" the document ID you are looking for, then..." and so on ! It becomes rapidly a real pain since you cannot 
+make quick, simple and complete queries against your Firestore database. 
 
-Install dependencies with yarn. (May take a while for first fresh install). Unfortunately since we use electron-rebuild package,
-[yarn seems to be the only way](https://github.com/electron-userland/electron-builder#installation) to install dependencies correctly
+## This solution
+Firesteer gives you the ability to create any queries on any collections and / or documents.
+It also provides a simple and clear way to visualize your queries results (hey, better than making custom scripts in a terminal ?)
+For those who would be familiar with MongoDB, Firesteer tends to offer the same features as [Robo3T](https://robomongo.org/) 
 
-```bash
-$ yarn
-```
+## Installation
 
-## Run
+1. TBD
+2. get firestore private key  
+![alt text](https://raw.githubusercontent.com/sambegin/Firesteer/master/.github/generate_firestore_private-key.png)
+## Usage
 
-Start the app in the `dev` environment. This starts the renderer process in hot-module-replacement mode and starts a webpack dev server that sends hot updates to the renderer process:
+## Contributors
 
-```bash
-$ yarn run dev
-```
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore -->
+| [<img src="https://avatars3.githubusercontent.com/u/6645382?v=4" width="100px;"/><br /><sub><b>sambegin</b></sub>](https://github.com/sambegin)<br />[💬](#question-sambegin "Answering Questions") [💻](https://github.com/sambegin/Firesteer/commits?author=sambegin "Code") [📖](https://github.com/sambegin/Firesteer/commits?author=sambegin "Documentation") [🤔](#ideas-sambegin "Ideas, Planning, & Feedback") [🚇](#infra-sambegin "Infrastructure (Hosting, Build-Tools, etc)") [📦](#platform-sambegin "Packaging/porting to new platform") [👀](#review-sambegin "Reviewed Pull Requests") [⚠️](https://github.com/sambegin/Firesteer/commits?author=sambegin "Tests") | [<img src="https://avatars0.githubusercontent.com/u/5473183?v=4" width="100px;"/><br /><sub><b>William Lauzé</b></sub>](https://github.com/wilau2)<br />[📖](https://github.com/sambegin/Firesteer/commits?author=wilau2 "Documentation") |
+| :---: | :---: |
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+## LICENSE
 
-Alternatively, you can run the renderer and main processes separately. This way, you can restart one process without waiting for the other. Run these two commands **simultaneously** in different console tabs:
-
-```bash
-$ yarn run start-renderer-dev
-$ yarn run start-main-dev
-```
-
-## Packaging
-
-To package apps for the local platform:
-
-```bash
-$ yarn run package
-```
-
-To package apps for all platforms:
-
-First, refer to [Multi Platform Build](https://www.electron.build/multi-platform-build) for dependencies.
-
-Then,
-```bash
-$ yarn run package-all
-```
-
-To package apps with options:
-
-```bash
-$ yarn run package -- --[option]
-```
-
-To run End-to-End Test
-
-```bash
-$ yarn run build
-$ yarn run test-e2e
-```
-
-:bulb: You can debug your production build with devtools by simply setting the `DEBUG_PROD` env variable:
-```bash
-DEBUG_PROD=true npm run package
-```
-
-## How to add modules to the project
-
-You will need to add other modules to this boilerplate, depending on the requirements of your project. For example, you may want to add [node-postgres](https://github.com/brianc/node-postgres) to communicate with PostgreSQL database, or 
-[material-ui](https://material-ui-next.com/) to reuse react UI components.
-
-⚠️ Please read the following section before installing any dependencies ⚠️
-
-### Module Structure
-
-This boilerplate uses a [two package.json structure](https://github.com/electron-userland/electron-builder/wiki/Two-package.json-Structure). This means, you will have two `package.json` files.
-
-1. `./package.json` in the root of your project
-1. `./app/package.json` inside `app` folder
-
-### Which `package.json` file to use
-
-**Rule of thumb** is: all modules go into `./package.json` except native modules. Native modules go into `./app/package.json`.
-
-1. If the module is native to a platform (like firebase-admin) or otherwise should be included with the published package (i.e. bcrypt, openbci), it should be listed under `dependencies` in `./app/package.json`.
-2. If a module is `import`ed by another module, include it in `dependencies` in `./package.json`.   See [this ESLint rule](https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/no-extraneous-dependencies.md). Examples of such modules are `material-ui`, `redux-form`, and `moment`.
-3. Otherwise, modules used for building, testing and debugging should be included in `devDependencies` in `./package.json`.
-
-### Further Readings
-
-See the wiki page, [Module Structure — Two package.json Structure](https://github.com/chentsulin/electron-react-boilerplate/wiki/Module-Structure----Two-package.json-Structure) to understand what is native module, the rationale behind two package.json structure and more.
-
-For an example app that uses this boilerplate and packages native dependencies, see [erb-sqlite-example](https://github.com/amilajack/erb-sqlite-example).
-
-## Dispatching redux actions from main process
-
-See [#118](https://github.com/chentsulin/electron-react-boilerplate/issues/118) and [#108](https://github.com/chentsulin/electron-react-boilerplate/issues/108)
-
-## Maintainers
-
-## Backers
-
-## Sponsors
+MIT
