@@ -8,8 +8,15 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors)
 
 ## The problem
+Google offers what they call the [Firebase Console](https://console.firebase.google.com) to see what's in your database. It provides a simple (too simple) way to visualize each saved collections and documents.
+However, the moment you'll gather more and more data, you'll have to play the game: "Let's click on my collection, then scroll... then click... then scroll... 
+then "CMD (CTRL) + F" the document ID you are looking for, then..." and so on ! It becomes rapidly a real pain since you cannot 
+make quick, simple and complete queries against your Firestore database. 
 
 ## This solution
+Firesteer gives you the ability to create any queries on any collections and / or documents.
+It also provides a simple and clear way to visualize your queries results (hey, better than making custom scripts in a terminal ?)
+For those who would be familiar with MongoDB, Firesteer tends to offer the same features as [Robo3T](https://robomongo.org/) 
 
 ## Installation
 
